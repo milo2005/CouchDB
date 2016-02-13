@@ -19,7 +19,7 @@ public class LibroDAO extends DocumentDAO {
     }
 
     public Libro getLibroById(String id){
-        HashMap<String, Object> p = (HashMap<String, Object>) document(id);
+        Map<String, Object> p = (HashMap<String, Object>) document(id);
         Libro l = null;
 
         if(p.size()>0)
